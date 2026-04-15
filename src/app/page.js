@@ -1,9 +1,12 @@
+import Banner from "@/components/Banner/Banner";
+import BannerCard from "@/components/Banner/BannerCard";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <h2 className="btn btn-primary">hello</h2>
+    <> 
+    <Banner></Banner>
+    <BannerCard></BannerCard>
     </>
   );
 }
