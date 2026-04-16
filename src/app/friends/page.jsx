@@ -5,7 +5,7 @@ import React from 'react';
 const page = () => {
     return (
         <div>
-            <FriendCard from={friends}></FriendCard>
+            <FriendCard></FriendCard>
         </div>
     );
 };
