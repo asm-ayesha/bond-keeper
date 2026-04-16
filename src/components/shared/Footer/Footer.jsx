@@ -26,7 +26,7 @@ const Footer = () => {
 
                 </div>
             </nav>
-            <div className="flex justify-between w-full max-w-4xl text-gray-400 border-t pt-6 border-teal-700" >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-between w-full max-w-4xl text-gray-400 border-t pt-6 border-teal-700" >
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
                 <div className='flex gap-4'>
                     <p>Privacy Policy</p>

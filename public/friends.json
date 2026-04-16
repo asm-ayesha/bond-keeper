@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.pravatar.cc/150?img=11",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Priya Nair",
+    "picture": "https://i.pravatar.cc/150?img=47",
+    "email": "priya.nair@gmail.com",
+    "days_since_contact": 3,
+    "status": "on_track",
+    "tags": ["work", "mentor"],
+    "bio": "Senior engineer who helped me land my first job. We grab coffee every few weeks.",
+    "goal": 14,
+    "next_due_date": "2025-07-11"
+  },
+  {
+    "id": 3,
+    "name": "Marcus Webb",
+    "picture": "https://i.pravatar.cc/150?img=14",
+    "email": "marcus.webb@outlook.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["childhood", "close friend"],
+    "bio": "Best friend since 3rd grade. Lives in Vancouver now but we try to catch up monthly.",
+    "goal": 30,
+    "next_due_date": "2025-06-30"
+  },
+  {
+    "id": 4,
+    "name": "Sofia Delgado",
+    "picture": "https://i.pravatar.cc/150?img=49",
+    "email": "sofia.d@yahoo.com",
+    "days_since_contact": 7,
+    "status": "on_track",
+    "tags": ["book club", "neighbor"],
+    "bio": "Met at a neighborhood book club. We both love literary fiction and good wine.",
+    "goal": 21,
+    "next_due_date": "2025-07-14"
+  },
+  {
+    "id": 5,
+    "name": "Tariq Osman",
+    "picture": "https://i.pravatar.cc/150?img=57",
+    "email": "tariq@protonmail.com",
+    "days_since_contact": 0,
+    "status": "on_track",
+    "tags": ["college", "gym buddy"],
+    "bio": "Roommate from junior year. We still work out together twice a week.",
+    "goal": 7,
+    "next_due_date": "2025-07-11"
+  },
+  {
+    "id": 6,
+    "name": "Elena Vasquez",
+    "picture": "https://i.pravatar.cc/150?img=45",
+    "email": "elena.v@gmail.com",
+    "days_since_contact": 90,
+    "status": "overdue",
+    "tags": ["travel", "old friend"],
+    "bio": "Met backpacking through Southeast Asia in 2019. We promised to stay in touch but keep drifting.",
+    "goal": 60,
+    "next_due_date": "2025-07-01"
+  },
+  {
+    "id": 7,
+    "name": "Daniel Park",
+    "picture": "https://i.pravatar.cc/150?img=33",
+    "email": "dpark@icloud.com",
+    "days_since_contact": 5,
+    "status": "on_track",
+    "tags": ["work", "close friend"],
+    "bio": "Colleague turned close friend. We vent about work, share playlists, and grab ramen regularly.",
+    "goal": 14,
+    "next_due_date": "2025-07-12"
+  },
+  {
+    "id": 8,
+    "name": "Amara Okonkwo",
+    "picture": "https://i.pravatar.cc/150?img=29",
+    "email": "amara.okonkwo@gmail.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["family friend", "creative"],
+    "bio": "Family friend since childhood. She's a graphic designer and we collaborate on side projects.",
+    "goal": 14,
+    "next_due_date": "2025-07-05"
+  },
+  {
+    "id": 9,
+    "name": "Lena Fischer",
+    "picture": "https://i.pravatar.cc/150?img=44",
+    "email": "lena.fischer@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["exchange student", "close friend"],
+    "bio": "Met during a semester abroad in Berlin. We still video call and visit when we can.",
+    "goal": 14,
+    "next_due_date": "2025-07-08"
+  },
+  {
+    "id": 10,
+    "name": "Jamal Carter",
+    "picture": "https://i.pravatar.cc/150?img=68",
+    "email": "jamal.carter@icloud.com",
+    "days_since_contact": 9,
+    "status": "on_track",
+    "tags": ["college", "music"],
+    "bio": "Bonded over jazz and late-night studio sessions in college. He's a producer now in Atlanta.",
+    "goal": 21,
+    "next_due_date": "2025-07-18"
+  }
+]
