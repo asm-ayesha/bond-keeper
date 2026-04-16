@@ -3,7 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 import FriendProvider, { FriendContext } from "@/components/context/FriendContext";
-import TimeLinePage from "./timeline/page";
+import { ToastContainer } from "react-toastify";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
         <FriendProvider >
+          <ToastContainer></ToastContainer>
           {children}
         </FriendProvider>
        <Footer></Footer>

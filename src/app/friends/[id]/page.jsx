@@ -5,8 +5,6 @@ import React from 'react';
 import { FiArchive } from 'react-icons/fi';
 import { IoMdStopwatch } from 'react-icons/io';
 import { MdDeleteOutline } from 'react-icons/md';
-// import { MdDeleteOutline, MdOutlineTextsms, MdOutlineVideocam } from 'react-icons/md';
-// import { TbPhoneCall } from 'react-icons/tb';
 
 
 
