@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FriendCard = ({ friend }) => {
@@ -10,7 +11,8 @@ const statusColor = {
   };
 
   return (
-    <div className="bg-white border border-teal-200 shadow-md rounded-xl p-4 text-center">
+    <Link href={`/friends/${friend.id}`}>
+      <div className="bg-white border border-teal-200 shadow-md rounded-xl p-4 text-center">
       <Image
         src={friend.picture}
         width={80}
@@ -30,6 +32,7 @@ const statusColor = {
         {friend.status}
       </button>
     </div>
+    </Link>
   );
 };
 
