@@ -9,7 +9,7 @@ import { MdDeleteOutline } from 'react-icons/md';
 
 
 const friendsPromise = async function () {
-  const res = await fetch("http://localhost:3000/friends.json");
+  const res = await fetch("https://bond-keeper-jd3fewc8j-ayesha219333-4196s-projects.vercel.app/friends.json");
   const data = await res.json();
   return data;
 

@@ -3,7 +3,7 @@ import FriendCard from '../ui/FriendCard';
 
 
 const FriendsCard = async () => {
-    const res = await fetch("http://localhost:3000/friends.json", {
+    const res = await fetch("https://bond-keeper-jd3fewc8j-ayesha219333-4196s-projects.vercel.app/friends.json", {
         cache: "no-store"
     });
     const friends = await res.json();
