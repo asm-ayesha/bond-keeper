@@ -1,10 +1,12 @@
+import ToggoleBtns from '@/components/friends/ToggoleBtns';
 import { Span } from 'next/dist/trace';
 import Image from 'next/image';
 import React from 'react';
 import { FiArchive } from 'react-icons/fi';
 import { IoMdStopwatch } from 'react-icons/io';
-import { MdDeleteOutline, MdOutlineTextsms, MdOutlineVideocam } from 'react-icons/md';
-import { TbPhoneCall } from 'react-icons/tb';
+import { MdDeleteOutline } from 'react-icons/md';
+// import { MdDeleteOutline, MdOutlineTextsms, MdOutlineVideocam } from 'react-icons/md';
+// import { TbPhoneCall } from 'react-icons/tb';
 
 
 
@@ -20,7 +22,7 @@ const FriendDetailsPage = async ({ params }) => {
   console.log(friends)
 
   const { id } = await params;
-  console.log(id, "params")
+  
 
 
   const statusColor = {
@@ -29,7 +31,8 @@ const FriendDetailsPage = async ({ params }) => {
   };
 
   const friend = friends.find(friend => friend.id == id)
-  console.log(friend)
+ 
+  
   return (
     <div className='container mx-auto justify-center mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 '>
       <div className='col-span-1 '>
@@ -106,20 +109,7 @@ const FriendDetailsPage = async ({ params }) => {
               <div className='border border-gray-200 shadow-md  p-6 rounded-lg'>
                   <h2 className='text-teal-800 text-2xl  font-bold my-3'>Quick Check-In</h2>
 
-                  <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-                      <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer'>
-                          <TbPhoneCall className='text-xl mx-auto'></TbPhoneCall>
-                          <p className='text-xl'>Call</p>
-                      </div>
-                      <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer'>
-                          <MdOutlineTextsms className='text-xl mx-auto'></MdOutlineTextsms>
-                          <p className='text-xl'>Text</p>
-                      </div>
-                      <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer'>
-                          <MdOutlineVideocam className='text-xl mx-auto'></MdOutlineVideocam>
-                          <p className='text-xl'>Video</p>
-                      </div>
-                  </div>
+                  <ToggoleBtns friend={friend}></ToggoleBtns>
 
               </div>
         </div>
