@@ -18,7 +18,7 @@ const FriendsCard = async({from}) => {
         <div className='container mx-auto my-20'>
             <h2 className='font-bold text-xl text-teal-800'>Your Friends</h2>
 
-            <div  className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-20 px-2">
+            <div  className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10 px-2">
 
                 {
                     friends.map(friend => <FriendCard key={friend.id} friend={friend}></FriendCard>)
