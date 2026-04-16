@@ -19,7 +19,7 @@ const StatsPage = () => {
   return (
     <div className="mt-15 container mx-auto px-2">
       <h2 className="font-bold text-5xl mb-10 text-teal-800">
-        FriendShip Analytics
+        Friendship Analytics
       </h2>
 
       <div className=" rounded-md border border-teal-200 shadow-md px-2">
@@ -34,7 +34,7 @@ const StatsPage = () => {
               <Pie
                 data={data}
                 dataKey="value"
-                innerRadius={80}
+                innerRadius={70}
                 outerRadius={100}
                 paddingAngle={5}
               />

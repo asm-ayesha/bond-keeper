@@ -20,20 +20,20 @@ const ToggoleBtns = ({ friend }) => {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-            <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer hover:bg-teal-800' onClick={() => {
+            <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer hover:bg-teal-800 hover:text-white' onClick={() => {
                 handleClick("Call")
             }}>
                 <TbPhoneCall className='text-xl mx-auto'></TbPhoneCall>
                 <p className='text-xl'>Call</p>
             </div>
-            <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer hover:bg-teal-800' onClick={() => {
+            <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer hover:bg-teal-800 hover:text-white' onClick={() => {
                 handleClick("Text")
 
             }}>
                 <MdOutlineTextsms className='text-xl mx-auto'></MdOutlineTextsms>
                 <p className='text-xl'>Text</p>
             </div>
-            <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer hover:bg-teal-800' onClick={() => {
+            <div className='bg-teal-50 rounded-lg p-6 shadow-md text-center space-y-3 cursor-pointer hover:bg-teal-800 hover:text-white' onClick={() => {
                 handleClick("Video")
             }}>
                 <MdOutlineVideocam className='text-xl mx-auto'></MdOutlineVideocam>

@@ -1,5 +1,5 @@
 import ToggoleBtns from '@/components/friends/ToggoleBtns';
-import { Span } from 'next/dist/trace';
+// import { Span } from 'next/dist/trace';
 import Image from 'next/image';
 import React from 'react';
 import { FiArchive } from 'react-icons/fi';
@@ -20,17 +20,18 @@ const FriendDetailsPage = async ({ params }) => {
   console.log(friends)
 
   const { id } = await params;
-  
+
 
 
   const statusColor = {
     overdue: "bg-amber-100 text-amber-600",
     on_track: "bg-indigo-100 text-indigo-600",
+    almost_due: "bg-violet-100 text-violet-600",
   };
 
   const friend = friends.find(friend => friend.id == id)
- 
-  
+
+
   return (
     <div className='container mx-auto justify-center mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 '>
       <div className='col-span-1 '>
@@ -77,39 +78,39 @@ const FriendDetailsPage = async ({ params }) => {
 
 
       <div className=' col-span-1 lg:col-span-2'>
-        
+
         <div className='grid grid-rows-3 gap-6'>
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-                  <div className='border border-gray-200 shadow-md  rounded-lg text-center flex flex-col justify-center'>
-                    <h2 className='text-teal-700 text-4xl font-bold'>{friend.days_since_contact}</h2>
-                      <p className='text-gray-400 font-bold text-xl'>Days Since Contact</p>
-                  </div>
-                  <div className='border border-gray-200 shadow-md  rounded-lg text-center flex flex-col justify-center'>
-                    <h2 className='text-teal-700 text-4xl font-bold'>{friend.goal}</h2>
-                      <p className='text-gray-400 font-bold text-xl'>Goal</p>
-                  </div>
-                  <div className='border border-gray-200 shadow-md rounded-lg text-center flex flex-col justify-center'>
-                    <h2 className='text-teal-700 text-4xl font-bold'>{friend.next_due_date}</h2>
-                      <p className='text-gray-400 font-bold text-xl'>Next Due Date</p>
-                  </div>
-              </div>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <div className='border border-gray-200 shadow-md  rounded-lg text-center flex flex-col justify-center'>
+              <h2 className='text-teal-700 text-4xl font-bold'>{friend.days_since_contact}</h2>
+              <p className='text-gray-400 font-bold text-xl'>Days Since Contact</p>
+            </div>
+            <div className='border border-gray-200 shadow-md  rounded-lg text-center flex flex-col justify-center'>
+              <h2 className='text-teal-700 text-4xl font-bold'>{friend.goal}</h2>
+              <p className='text-gray-400 font-bold text-xl'>Goal</p>
+            </div>
+            <div className='border border-gray-200 shadow-md rounded-lg text-center flex flex-col justify-center'>
+              <h2 className='text-teal-700 text-4xl font-bold'>{friend.next_due_date}</h2>
+              <p className='text-gray-400 font-bold text-xl'>Next Due Date</p>
+            </div>
+          </div>
 
-              <div className='border border-gray-200 shadow-md flex justify-between items-center px-4 rounded-lg'>
-                  <div>
-                    <h2 className='text-teal-800 font-bold text-2xl'>RalationShip Goal</h2>
-                    <p className='text-gray-400 font-bold'>Connect every <span className='font-bold text-black'>30 days</span></p>
-                  </div>
-                  <div>
-                    <button className='btn bg-white shadow'>Edit</button>
-                  </div>
-              </div>
+          <div className='border border-gray-200 shadow-md flex justify-between items-center px-6 rounded-lg'>
+            <div>
+              <h2 className='text-teal-800 font-bold text-2xl'>Ralationship Goal</h2>
+              <p className='text-gray-400 font-bold'>Connect every <span className='font-bold text-black'>30 days</span></p>
+            </div>
+            <div>
+              <button className='btn bg-white shadow'>Edit</button>
+            </div>
+          </div>
 
-              <div className='border border-gray-200 shadow-md  p-6 rounded-lg'>
-                  <h2 className='text-teal-800 text-2xl  font-bold my-3'>Quick Check-In</h2>
+          <div className='border border-gray-200 shadow-md  p-6 rounded-lg'>
+            <h2 className='text-teal-800 text-2xl  font-bold my-3'>Quick Check-In</h2>
 
-                  <ToggoleBtns friend={friend}></ToggoleBtns>
+            <ToggoleBtns friend={friend}></ToggoleBtns>
 
-              </div>
+          </div>
         </div>
       </div>
 

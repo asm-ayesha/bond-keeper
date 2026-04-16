@@ -6,10 +6,10 @@ import FriendsCard from "@/components/Banner/FriendsCard";
 
 export default function Home() {
   return (
-    <> 
-    <Banner></Banner>
-    <BannerCard></BannerCard>
-    <FriendsCard></FriendsCard>
+    <>
+      <Banner></Banner>
+      <BannerCard></BannerCard>
+      <FriendsCard ></FriendsCard>
     </>
   );
 }
