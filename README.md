@@ -69,8 +69,8 @@ BondKeeper is a responsive web application designed to help users maintain meani
    ```
 
 5. Open in browser:
-   ```http://localhost:3000
-   ```
+   http://localhost:3000
+   
 
 ---
 
