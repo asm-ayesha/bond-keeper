@@ -69,8 +69,7 @@ BondKeeper is a responsive web application designed to help users maintain meani
    ```
 
 5. Open in browser:
-   ```
-   https://bond-keeper.vercel.app/stats
+   ```https://bond-keeper.vercel.app/
    ```
 
 ---
